@@ -1,0 +1,27 @@
+<HTML>
+
+<CENTER><TABLE BORDER='1px' WIDTH='60%' BGCOLOR='#DA70D6'><TD>
+<CENTER><h1><I><Font Color='white'>Order Confirmation</I></h1>  
+  </CENTER></TD></TABLE>
+
+  <CENTER><TABLE BORDER='1px' WIDTH='60%'>
+  <TD BGCOLOR='#DDA0DD' WIDTH='20%' Padding=1px><B>
+  Customer's Name: </TD><TD BGCOLOR='White'> 
+  <%= @shoe.pretty_name %></TD>
+  <TR>
+  <TD BGCOLOR='#DDA0DD'><B>Style:</TD>
+  <TD BGCOLOR='White'>
+  <%= @shoe.style  %></TD>
+
+  <TR><TD BGCOLOR='#DDA0DD'>
+  <B>Quantity:</TD >
+  <TD BGCOLOR='White'><%=@shoe.quantity()  %></TD>
+  <TR><TD BGCOLOR='#DDA0DD'>
+    <B>Size:</TD>
+    <TD BGCOLOR='White'><%=@shoe.size()  %></TD>
+  <TR><TD BGCOLOR='#DDA0DD'>
+    <B>Total:</TD><TD BGCOLOR='White'>
+  <%=@shoe.total()  %>
+  </TABLE>
+
+  <!-- <IMG src ="http://www.amigosdigmoor.co.uk/wp-content/uploads/2014/02/pizza_hd_wallpaper-wide.jpg" /> -->
